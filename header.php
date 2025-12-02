@@ -1,3 +1,7 @@
+<?php
+// PHP code to get the current page file name
+$current_page = basename($_SERVER['PHP_SELF']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,26 +34,34 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="index.php" class="logo d-flex align-items-center me-auto me-xl-0">
         <h1 class="sitename">St. Luke's<span>.</span></h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.php" class="active">Home</a></li>
-          <li><a href="about.php">About</a></li>
-          <li><a href="departments.php">Departments</a></li>
-          <li><a href="services.php">Services</a></li>
-          <li><a href="doctors.php">Doctors</a></li>
-          <li class="dropdown"><a href="#"><span>College</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="index.php" class="<?php echo ($current_page == 'index.php') ? 'active' : ''; ?>">Home</a></li>
+          <li><a href="about.php" class="<?php echo ($current_page == 'about.php') ? 'active' : ''; ?>">About</a></li>
+          <li><a href="departments.php" class="<?php echo ($current_page == 'departments.php') ? 'active' : ''; ?>">Departments</a></li>
+          <li><a href="services.php" class="<?php echo ($current_page == 'services.php') ? 'active' : ''; ?>">Services</a></li>
+          <li><a href="doctors.php" class="<?php echo ($current_page == 'doctors.php') ? 'active' : ''; ?>">Doctors</a></li>
+          
+          <li class="dropdown">
+            <?php
+              // Check if any College sub-page is active to highlight the main dropdown
+              $is_college_active = in_array($current_page, ['college-about.php', 'college-programs.php', 'college-admissions.php', 'college-contact.php']);
+            ?>
+            <a href="#" class="<?php echo ($is_college_active) ? 'active' : ''; ?>">
+              <span>College</span> <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
             <ul>
-              <li><a href="college-about.php">About College</a></li>
-              <li><a href="college-programs.php">Programs Offered</a></li>
-              <li><a href="college-admissions.php">Admissions</a></li>
-              <li><a href="college-contact.php">College Contact</a></li>
+              <li><a href="college-about.php" class="<?php echo ($current_page == 'college-about.php') ? 'active' : ''; ?>">About College</a></li>
+              <li><a href="college-programs.php" class="<?php echo ($current_page == 'college-programs.php') ? 'active' : ''; ?>">Programs Offered</a></li>
+              <li><a href="college-admissions.php" class="<?php echo ($current_page == 'college-admissions.php') ? 'active' : ''; ?>">Admissions</a></li>
+              <li><a href="college-contact.php" class="<?php echo ($current_page == 'college-contact.php') ? 'active' : ''; ?>">College Contact</a></li>
             </ul>
           </li>
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="contact.php" class="<?php echo ($current_page == 'contact.php') ? 'active' : ''; ?>">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -58,3 +70,6 @@
 
     </div>
   </header>
+
+  <main class="main">
+    ```
