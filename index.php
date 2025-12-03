@@ -5,7 +5,7 @@
         <div class="row align-items-center">
           <div class="col-lg-5">
             <div class="hero-image" data-aos="fade-right" data-aos-delay="100">
-              <img src="assets/img/health/staff-8.webp" alt="Healthcare Professional" class="img-fluid main-image">
+              <img src="assets/img/health/home.jpg" alt="Healthcare Professional" class="img-fluid main-image">
               <div class="floating-card emergency-card" data-aos="fade-up" data-aos-delay="300">
                 <div class="card-content">
                   <i class="bi bi-telephone-fill"></i>
@@ -116,7 +116,7 @@
           <div class="col-lg-7" data-aos="fade-right" data-aos-delay="200">
             <div class="image-grid">
               <div class="primary-image">
-                <img src="assets/img/health/facilities-6.webp" alt="Modern hospital facility" class="img-fluid">
+                <img src="assets/img/health/facility-1.jpg" alt="Modern hospital facility" class="img-fluid">
                 <div class="certification-badge">
                   <i class="bi bi-award"></i>
                   <span>Faith-Based Accredited</span>
@@ -124,10 +124,10 @@
               </div>
               <div class="secondary-images">
                 <div class="small-image">
-                  <img src="assets/img/health/consultation-3.webp" alt="Doctor consultation" class="img-fluid">
+                  <img src="assets/img/health/facility-3.jpg" alt="Doctor consultation" class="img-fluid">
                 </div>
                 <div class="small-image">
-                  <img src="assets/img/health/surgery-2.webp" alt="Medical procedure" class="img-fluid">
+                  <img src="assets/img/health/facility-2.jpg" alt="Medical procedure" class="img-fluid">
                 </div>
               </div>
             </div>
@@ -236,7 +236,7 @@
               <div class="col-lg-6 order-lg-2">
                 <div class="department-visual">
                   <div class="image-wrapper">
-                    <img src="assets/img/health/emergency-3.webp" alt="Emergency Department" class="img-fluid">
+                    <img src="assets/img/health/integrated.jpg" alt="Emergency Department" class="img-fluid">
                   </div>
                 </div>
               </div>
